@@ -18,35 +18,60 @@ body{
 }
 
 /* About page */
-.about-me ul li{
-  width: 960px;
-  margin: 0 auto;
-  overflow: hidden;
-  list-style-type:none;
+
+.about {
+  padding: 130px 0;
 }
 
-.postsleft {
-  width: 300px;
-  float: left;
+.about .heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+
 }
 
-.postsright {
-  width: 620px;
-  float: left; 
+.about .heading h2 span {
+  color: #F24259;
 }
 
-p.home {
-  margin-left:21px !important;
-  padding-right:24px !important;
+.about .heading p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #999999;
+  margin: 20px 0 60px;
+  padding: 0;
 }
 
-.post-title-home {
-  margin-left:21px !important;
-  padding-right:24px !important;
+.about h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
+.about p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: white;
+  margin: 20px 0 15px;
+  padding: 0;
+}
 
+.about h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 0;
+}
 
+.about h4 i {
+  color: #F24259;
+  margin-right: 10px;
+}
+
+h4 {color: white;}
 
 
 p {color: white;}
@@ -255,156 +280,129 @@ p {color: white;}
       animation: scroll 200s linear infinite;
     }
   }
-
-  * {
+  
+  /*------#Conatct Page-------*/
+  *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  html {
-    background-color: #1e1e28;
-  }
-  
-  .main{
-    margin-top: 60px;
-  
-    margin-left: 60px;
-  
-    margin-right: 150px;
-    
-  }
-  .main::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .card_image img {
-    height: 170px;
-    max-width: 100%;
-    vertical-align: middle;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-  }
-  .card {
-    background-color: #27293d;
-    border-radius: 9px;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    float: left;
-    width: 17%;
-    
-    margin: 5px; 
-    
-  }
-  
-  .card_content {
-    padding: 1rem;
-    background: #f03430;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-  }
-  @media all and (min-width: 750px) and (max-width: 992px){
-    .main{
-    margin-top: 60px;
-    margin-left: 2px;
-    margin-right: 80px;
-  
-  }  
-    .cards_item {
-      width: 20%;
-    }
-  
-  }
-  .card_title {
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0px;
-  }
-  
-  .card_text {
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;    
-    font-weight: 400;
-  }
-  
-  .demo{ background: #F2F2F2; }
-  .form-container{
-      background-color: #e8ddbf;
-      font-family: 'Nunito', sans-serif;
-      text-align: center;
-      padding: 60px 100px 100px;
-      border-radius: 50%;
-  }
-  .form-container .title{
-      color: #666157;
-      font-size: 30px;
-      font-weight: 700;
-      text-transform: capitalize;
-      margin: 0 0 20px;
-      display: inline-block;
-      position: relative;
-  }
-  .form-container .form-horizontal .form-group{
-      font-size: 0px;
-      margin: 0 0 15px;
-  }
-  .form-container .form-horizontal .form-control{
-      color: #666157;
-      background: #E6E6E6;
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      height: 45px;
-      padding: 6px 30px;
-      border-radius: 50px;
-      box-shadow: inset -3px -3px 10px #eee;
-      border: none;
-      border-top: 2px solid #CECECE;
-      border-left: 2px solid #CECECE;
-  }
-  .form-container .form-horizontal .form-control:focus{
-      outline: none;
-      box-shadow: none;
-  }
-  .form-container .form-horizontal .form-control::placeholder{
-      color: #666157; 
-      font-weight: 600;  
-      font-style: italic;
-  }
-  .form-container .form-horizontal .btn{
-      color: #fff;
-      background-color: #e6a760;
-      font-size: 25px;
-      font-weight: 700;
-      font-style: italic;
-      text-transform: capitalize;
-      width: 100%;
-      border: none;
-      border-radius: 50px;
-      box-shadow: inset -3px -3px 10px #bd841b;
-      transition: all 0.3s ease 0s;
-  }
-  .form-container .form-horizontal .btn:hover{ letter-spacing: 3px; }
-  .form-container .form-horizontal .btn:focus{ outline: none; }
-  @media only screen and (max-width:479px){
-      .form-container{
-          padding: 50px 50px 70px;
-          border-radius: 30%;
-      }
-  }
-  
+    font-family: trebuchet ms;
+    font-size: 14pt;
+ }
  
+ h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 28pt;
+ }
+ 
+ 
+ 
+ 
+ form {
+    max-width: 960px;
+    margin: auto;
+ }
+ 
+ form input,
+ textarea,
+ select,
+ option {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+ }
+ 
+ input#firstname {
+    width: 100%;
+    max-width: 460px;
+    float: left;
+    margin-right: 20px;
+ }
+ 
+ input#surname {
+    width: 100%;
+    max-width: 460px;
+    float: left;
+    margin-left: 20px;
+ }
+ 
+ input#email {
+    width: 100%;
+    margin-top: 20px;
+ }
+ 
+ textarea#message {
+    width: 100%;
+    margin-top: 20px;
+ }
+ 
+ input#submit-btn {
+    margin-top: 20px;
+    width: 100px;
+    border: 2px solid #FFF !important;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* transition */
+    
+    transition: 0.25s ease-in-out 0s;
+ }
+ 
+ input#submit-btn:hover {
+    cursor: pointer;
+    background: #FFF;
+    color: #000;
+    /* scale */
+    
+    transform: scale(1.25);
+ }
+ /* Placeholder style */
+ 
+ ::-webkit-input-placeholder {
+    color: #FFF;
+    opacity: 1;
+ }
+ 
+ ::-moz-placeholder {
+    color: #FFF;
+    opacity: 1;
+ }
+ /* firefox 19+ */
+ 
+ :-ms-input-placeholder {
+    color: #FFF;
+    opacity: 1;
+ }
+ /* ie */
+ 
+ input:-moz-placeholder {
+    color: #FFF;
+    opacity: 1;
+ }
+ 
+ @media screen and (max-width: 960px){
+    form{
+       width: 90%;
+    }
+    input#firstname, input#surname{
+       margin: 0 !important;
+       max-width: 100% !important;
+    }
+ }
   
-
+  /*-----Projects-------*/
+  
+  .btn{
+    background-color:#e1b453;
+    color: black; 
+  }
   
   
-  
-  
+  /*-----Testimonial-------*/
 
   
   .heading {
@@ -448,7 +446,7 @@ p {color: white;}
     color: #ffffff; 
 }
 
-/*-----Testimonial-------*/
+
 
 .testimonial:after {
     position: absolute;
@@ -639,48 +637,83 @@ p {color: white;}
     height: 35px;
 }
 /*-----Progress.Bar-------*/
-.progress_bar{
-  height: 20px;
-  background-color:#231E26;
-  border-radius:15px;
-  box-shadow:0 4px 7px -5px #000 inset;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-.progress_bar:first-child{
-  margin: 50px 0;
+
+
+.bd-grid {
+  
+    max-width: 1000px;
+    display: grid;
 }
-.progress_bar .pro-bar{
-  position: relative;
-  height: 100%;
-  box-shadow: 0 1px 11px -4px #fff inset;
-  border-radius:15px;
-  animation: animate-positive 4s;
+
+
+.skills_container {
+    text-align: center;
+    row-gap: 32px;
+    margin: 10% auto;
+    padding: 25px;
+
 }
-.progress_bar .pro-bar > span{
-  background: linear-gradient(to top, #3d4131 35%, #fff 233%);
-  color: #a5a5a4;
-  box-shadow: 1px 1px  3px #1d1a1f;
-  font-size: 14px;
-  font-weight: 700;
-  position: absolute;
-  top: -37px;
-  right: -10%;
-  padding: 4px 10px;
-  border-radius: 3px 3px 3px 0px;
+
+
+
+.skills_data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    box-shadow: .1px .1px 2px  #e1b453;
+    
 }
-.progress_bar .pro-bar > span:after{
-  content: "";
-  border-top: 6px solid #3d4131;
-  border-right: 6px solid transparent;
-  position: absolute;
-  bottom: -6px;
-  left:0;
+
+.skills_icon {
+    color: white;
+    font-size: 32px;
+    margin-right: 16px;
 }
-@-webkit-keyframes animate-positive {
-  0% { width: 0%;}
+
+.skills_names {
+    display: flex;
+    align-items: center;
 }
-@keyframes animate-positive {
-  0% { width:0%; }
+
+.skills_bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color:#e1b453;
+    z-index: -10;
 }
+
+.skills_html {
+    width: 80%;
+}
+
+.skills_css {
+    width: 80%;
+}
+
+.skills_js {
+    width: 20%;
+}
+
+.skills_jq {
+    width: 70%;
+}
+
+
+
 
 /*-----Gold text-------*/
 .gold {
